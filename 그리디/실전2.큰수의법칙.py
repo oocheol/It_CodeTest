@@ -20,8 +20,8 @@ while True :
         break
     result += second
     m -= 1
-    
-print(result)    
+
+print("결과값 : ", result)    
 
 
 
