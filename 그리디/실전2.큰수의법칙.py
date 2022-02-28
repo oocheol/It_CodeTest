@@ -3,10 +3,28 @@
 n, m, k = map(int,input("n, m, k : ").split())
 
 data = list(map(int,input("배열 입력 : ").split()))
+data.sort()
 
-max = data[0]
+first = data[-1]
+second = data[-2]
+result = 0
 
-for i in range(data):
-    if (max < data[i]):
-        max = data[i]
+while True :
+    for _ in range(k):
+        if m == 0:
+            break
+        result += first
+        m -= 1
+    
+    if m == 0 :
+        break
+    result += second
+    m -= 1
+    
+print(result)    
+
+
+
+
+
 
